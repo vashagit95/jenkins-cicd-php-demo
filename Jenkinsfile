@@ -7,8 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get code from a GitHub repository
-                sh 'scp ${WORKSPACE}* ubuntu@$staging_server}:/var/www/html/',
-                 credentialsId: 'vashagit95'
+                sh 'scp ${WORKSPACE}* ubuntu@$staging_server}:/var/www/html/'
             }
         }
     }
